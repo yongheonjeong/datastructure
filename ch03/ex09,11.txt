@@ -1,0 +1,20 @@
+void insert(int array[],int loc,int value){
+    for(int i=9;i>loc-1;i--){
+        array[i] = array[i-1]; 
+    }
+    array[loc-1] = value;
+}
+
+n번 실행된다고 가정할때, 루프 제어식 n + (n+1) + n = 3n+1 
+루프식 대입연산은 +n번, 그 외 대입연산은 한번 +1 총 시간복잡도는
+3n+1+(n)+(1) = 4n+2, 시간복잡도 빅오는 O(n)
+
+ 
+int delete(int array[],int loc){
+    for(int i=loc;i<10;i++){
+        array[i-1] = array[i];
+    }
+    array[9] = 0;   
+}
+
+풀이와 결과는 위와 동일함 
