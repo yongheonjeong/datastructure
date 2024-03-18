@@ -3,6 +3,9 @@
 #include <malloc.h>
 #include <string.h>
 
+// 20214935 컴퓨터 공학과 정용헌, 3장 - 12번 
+
+
 typedef struct example {
     int num;
     char str[20];

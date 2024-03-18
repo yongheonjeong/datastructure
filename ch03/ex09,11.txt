@@ -1,3 +1,6 @@
+// 20214935 컴퓨터 공학과 정용헌, 3장 - 9,11번 
+
+
 void insert(int array[],int loc,int value){
     for(int i=9;i>loc-1;i--){
         array[i] = array[i-1]; 
